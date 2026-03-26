@@ -66,11 +66,12 @@ export default function Home() {
         <title>Aravind S | Blockchain Engineer</title>
       </Head>
 
-      <main className="bg-black px-6 md:px-16 lg:px-32 py-10">
+      <main className="bg-black px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-10">
         {/* NAV */}
-        <nav className="bg-gray-900 p-6 rounded-xl hover:shadow-lg hover:shadow-cyan-500/10 
-transition duration-300 flex justify-between items-center text-white">
-          <h1 className="text-3xl font-semibold flex items-center gap-2">
+        <nav className="bg-gray-900 p-4 sm:p-6 rounded-xl 
+flex flex-col md:flex-row gap-4 md:gap-0 
+justify-between items-start md:items-center text-white">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold flex items-center gap-2">
             Hi
             <motion.span
               animate={{ rotate: [0, 20, -10, 20, 0] }}
@@ -85,11 +86,11 @@ transition duration-300 flex justify-between items-center text-white">
             </motion.span>
             I'm Aravind S
           </h1>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
             {/* <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer" /> */}
-            <h1 className="text-gray-400 text-xl">Check my resume here 👉</h1>
-            <a href="/resume.pdf" target="_blank" className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg 
-             hover:underline active:scale-110 transition-transform duration-150">Resume</a>
+            <h1 className="text-gray-400 text-sm sm:text-base md:text-xl">Check my resume here 👉</h1>
+            <a href="/resume.pdf" target="_blank" className="px-3 py-2 sm:px-4 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg 
+    text-sm sm:text-base hover:underline active:scale-110 transition-transform duration-150">Resume</a>
           </div>
         </nav>
 
@@ -98,22 +99,22 @@ transition duration-300 flex justify-between items-center text-white">
 
           {/* LEFT SIDE (TEXT) */}
           <div className="max-w-2xl">
-            <h1 className="text-5xl font-bold text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
               Blockchain Engineer ⛓️
             </h1>
 
-            <p className="text-gray-400 mt-4 text-xl">
+            <p className="text-gray-400 mt-4 text-base sm:text-lg md:text-xl">
               Smart Contracts • DeFi • Layer 1 & Layer 2 Systems
             </p>
 
-            <p className="text-gray-300 mt-6">
+            <p className="text-gray-300 mt-6 text-sm sm:text-base">
               Blockchain Engineer focused on EVM & Solana ecosystems, with expertise in smart contracts (Solidity/Rust) and protocol design.
               Built zk-powered L2 infrastructure, DeFi systems (flashloans, staking, DEX), and cross-chain integrations.
               Passionate about scalable, secure, and production-ready Web3 systems.
               Deeply involved in the broader financial ecosystem, actively trading and investing in crypto and equities, which informs my understanding of market behavior and DeFi innovation.
             </p>
 
-            <div className="flex gap-6 text-3xl mt-6 text-gray-400">
+            <div className="flex gap-4 sm:gap-6 text-2xl sm:text-3xl mt-6 text-gray-400">
               <a href="http://www.linkedin.com/in/aravind-s-088367291" target="_blank"><AiFillLinkedin /></a>
               <a href="https://github.com/Aravinds2511" target="_blank"><AiFillGithub /></a>
               <a href="mailto:aravindvasang@gmail.com"><AiFillMail /></a>
@@ -125,7 +126,7 @@ transition duration-300 flex justify-between items-center text-white">
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="w-[350px] md:w-[450px]"
+              className="w-[250px] sm:w-[320px] md:w-[400px]"
             >
               <Lottie animationData={animationData} loop={true} />
             </motion.div>
@@ -135,11 +136,11 @@ transition duration-300 flex justify-between items-center text-white">
 
         {/* EXPERIENCE */}
         <section className="mt-20">
-          <h3 className="text-3xl text-white mb-6">Experience💼</h3>
+          <h3 className="text-2xl sm:text-3xl text-white mb-6">Experience💼</h3>
 
           <motion.div whileHover={{ scale: 1.03 }} initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }} className="bg-gray-900 p-6 rounded-xl mb-6">
+            transition={{ duration: 0.5 }} className="bg-gray-900 p-4 sm:p-6 rounded-xl mb-6">
             <h4 className="text-xl text-white">Blockchain Developer – Brixbit</h4>
             <ul className="mt-3 text-gray-400 list-disc ml-5">
               <li>Led the setup of a Layer 2 Validium chain using zk-proofs on top of a custom EVM-compatible Layer 1 blockchain (Silc)
@@ -156,7 +157,7 @@ transition duration-300 flex justify-between items-center text-white">
 
           <motion.div whileHover={{ scale: 1.03 }} initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }} className="bg-gray-900 p-6 rounded-xl mb-6">
+            transition={{ duration: 0.5 }} className="bg-gray-900 p-4 sm:p-6 rounded-xl mb-6">
             <h4 className="text-xl text-white">Protocol Developer – Nonceblox</h4>
             <ul className="mt-3 text-gray-400 list-disc ml-5">
               <li> Designed and developed a wide range of smart contracts including staking, vesting, token launchpads, and decentralized exchanges
@@ -179,7 +180,7 @@ transition duration-300 flex justify-between items-center text-white">
           </motion.div>
           <motion.div whileHover={{ scale: 1.03 }} initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }} className="bg-gray-900 p-6 rounded-xl mb-6">
+            transition={{ duration: 0.5 }} className="bg-gray-900 p-4 sm:p-6 rounded-xl mb-6">
             <h4 className="text-xl text-white">Blockchain Developer Intern – Rastr Technologies</h4>
             <ul className="mt-3 text-gray-400 list-disc ml-5">
               <li> Development and implementation of smart contracts.</li>
@@ -193,7 +194,7 @@ transition duration-300 flex justify-between items-center text-white">
         <section className="mt-20">
           <h3 className="text-3xl text-white mb-6">Projects🚀</h3>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((p, i) => (
               <motion.div key={i} whileHover={{ scale: 1.03 }} initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -216,7 +217,7 @@ transition duration-300 flex justify-between items-center text-white">
         {/* CERTIFICATIONS */}
         <section className="mt-20">
           <h3 className="text-3xl text-white mb-6">Certifications🏆</h3>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {certifications.map((c, i) => (
               <motion.a
                 whileHover={{ scale: 1.03 }}
@@ -237,8 +238,8 @@ transition duration-300 flex justify-between items-center text-white">
 
         {/* CTA */}
         <section className="mt-24 text-center">
-          <h3 className="text-3xl text-white">✨Let’s Build Something Meaningful</h3>
-          <p className="text-gray-400 mt-4">Open to Protocol Engineering, Smart contract roles, and Web3 infrastructure⚡.</p>
+          <h3 className="text-2xl sm:text-3xl text-white">✨Let’s Build Something Meaningful</h3>
+          <p className="text-gray-400 mt-4 text-sm sm:text-base">Open to Protocol Engineering, Smart contract roles, and Web3 infrastructure⚡.</p>
           <a href="mailto:aravindvasang@gmail.com" className="text-white inline-block mt-6 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg hover:underline active:scale-110 transition-transform duration-150">
             📞 Contact Me
           </a>
